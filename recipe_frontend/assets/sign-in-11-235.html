@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sign In - 11-235</title>
+  <meta name="viewport" content="width=375, initial-scale=1.0">
+  <link rel="stylesheet" href="./common.css">
+  <link rel="stylesheet" href="./sign-in-11-235.css">
+</head>
+<body>
+  <div id="root-screen" class="screen-container">
+    <!-- Status Bar (component_ref: property_1_light_mode) -->
+    <div class="status-bar">
+      <div class="symbols">
+        <div class="battery">
+          <div class="battery-rect"></div>
+          <!-- Battery foreground pieces from icons are handled by background fill -->
+          <div class="battery-fill"></div>
+        </div>
+        <div class="combined-shape"></div>
+        <div class="wifi"></div>
+      </div>
+      <div class="time text-typo-67">19:27</div>
+    </div>
+
+    <!-- Title group -->
+    <div class="title-group">
+      <div class="hello text-typo-60">Hello,</div>
+      <div class="welcome text-typo-61">Welcome Back!</div>
+    </div>
+
+    <!-- Input Email -->
+    <div class="input-email">
+      <div class="bg"></div>
+      <div class="label text-typo-66">Email</div>
+      <div class="placeholder text-typo-65">Enter Email</div>
+    </div>
+
+    <!-- Input Password -->
+    <div class="input-password">
+      <div class="bg"></div>
+      <div class="label text-typo-66">Enter Password</div>
+      <div class="placeholder text-typo-65">Enter Password</div>
+    </div>
+
+    <!-- Forgot Password -->
+    <div class="forgot-password">
+      <div class="text text-typo-62">Forgot Password?</div>
+    </div>
+
+    <!-- Divider with lines -->
+    <div class="divider">
+      <div class="line-left"></div>
+      <div class="label text-typo-64">Or Sign in With</div>
+      <div class="line-right"></div>
+    </div>
+
+    <!-- Google Social Button -->
+    <div class="social-btn google" role="button" aria-label="Sign in with Google" tabindex="0">
+      <div class="card"></div>
+      <!-- Background rounded card comes from style_126 -->
+      <!-- Google icon layers: prefer provided imagePath SVGs; use top-level component image if available -->
+      <img class="google-icon" src="figmaimages/figma_image_13_48.svg" alt="icons8-google-240 1"
+           style="object-fit: contain;">
+    </div>
+
+    <!-- Facebook Social Button -->
+    <div class="social-btn facebook" role="button" aria-label="Sign in with Facebook" tabindex="0">
+      <div class="card"></div>
+      <!-- Use provided imagePath for the vector icon -->
+      <img class="fb-icon" src="figmaimages/figma_image_13_61.svg" alt="facebook icon" style="object-fit: contain;">
+    </div>
+
+    <!-- Primary CTA Button -->
+    <div class="cta-button" role="button" aria-label="Sign In" tabindex="0">
+      <div class="label text-typo-58">Sign In</div>
+      <!-- Arrow Right icon from component imagePath -->
+      <img class="arrow-icon" src="figmaimages/figma_image_54_668_53_625.svg" alt="Arrow Right">
+    </div>
+
+    <!-- Sign up text -->
+    <div class="signup-link text-typo-63">Don’t have an account? Sign up</div>
+
+    <!-- Home Indicator -->
+    <div class="home-indicator">
+      <div class="bar"></div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+  <script src="./sign-in-11-235.js"></script>
+</body>
+</html>

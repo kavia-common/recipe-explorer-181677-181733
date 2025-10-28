@@ -1,0 +1,322 @@
+:root {
+  /* Colors from design system */
+  --color-colour-styles-neutral-colour-white: ;
+  --color-colour-styles-primary-colour-primary-100: ;
+  --color-colour-styles-neutral-colour-black: ;
+  --color-colour-styles-label-colour: ;
+  --color-colour-styles-secondary-colour-secondary-100: ;
+  --color-google-icon: ;
+  --color-facebook-icon: ;
+  --color-colour-styles-neutral-colour-gray-4: ;
+  --color-colour-styles-neutral-colour-gray-1: ;
+  --color-white-0: ;
+  --color-neutral-90: ;
+  --color-colour-styles-neutral-colour-gray-3: ;
+  --color-colour-styles-secondary-colour-secondary-80: ;
+  --color-colour-styles-secondary-colour-secondary-40: ;
+  --color-colour-styles-primary-colour-primary-80: ;
+  --color-neutral-30: ;
+  --color-colour-styles-rating: ;
+  --color-colour-styles-secondary-colour-secondary-20: ;
+  --color-colour-styles-primary-colour-primary-40: ;
+  --color-neutral-100: ;
+  --color-colour-styles-neutral-colour-gray-2: ;
+  --color-food-recipe-dark-grey: ;
+  --color-white: ;
+  --color-black: ;
+  --color-colour-styles-success-sucess-light: ;
+  --color-colour-styles-success-sucess: ;
+  --color-colour-styles-warning-light: ;
+  --color-colour-styles-warning: ;
+  --color-colour-styles-secondary-colour-secondary-60: ;
+  --color-colour-styles-primary-colour-primary-20: ;
+  --color-colour-styles-primary-colour-primary-60: ;
+  --color-gray-light: ;
+  --color-basic-white: ;
+  --color-color-grey-3: ;
+
+  /* Colors with explicit hex codes */
+  --color-ffffff: #ffffff;
+  --color-292929: #292929;
+  --color-000000: #000000;
+  --color-e9fffa: #e9fffa;
+  --color-979797: #979797;
+  --color-fff2af: #fff2af;
+  --color-129575: #129575;
+  --color-dadada: #dadada;
+  --color-4cd964: #4cd964;
+  --color-121212: #121212;
+  --color-ff9c00: #ff9c00;
+  --color-ffc107: #ffc107;
+  --color-ff3d00: #ff3d00;
+  --color-4caf50: #4caf50;
+  --color-1976d2: #1976d2;
+  --color-035b81: #035b81;
+  --color-d9d9d9: #d9d9d9;
+  --color-484848: #484848;
+  --color-303030: #303030;
+  --color-a9a9a9: #a9a9a9;
+  --color-ffa61a: #ffa61a;
+  --color-ffce80: #ffce80;
+  --color-71b1a1: #71b1a1;
+  --color-130f26: #130f26;
+  --color-c1c1c1: #c1c1c1;
+  --color-ffe1b3: #ffe1b3;
+  --color-ffad30: #ffad30;
+  --color-dbebez: #dbebe7; /* typo kept separate */
+  --color-dbeb: #dbebe7;
+  --color-898989: #898989;
+  --color-292d32: #292d32;
+  --color-181818: #181818;
+  --color-c4c4c4: #c4c4c4;
+  --color-797979: #797979;
+  --color-808a96: #808a96;
+  --color-ceecd7: #ceecd7;
+  --color-31b057: #31b057;
+  --color-ffe1e7: #ffe1e7;
+  --color-fd3654: #fd3654;
+  --color-ffba4d: #ffba4d;
+  --color-d8d8d8: #d8d8d8;
+  --color-f6faf9: #f6faf9;
+  --color-afd3ca: #afd3ca;
+  --color-f4f4f4: #f4f4f4;
+  --color-9747ff: #9747ff;
+  --color-828282: #828282;
+
+  /* Typography variables (only those used in this screen) */
+  --typo-58-family: 'Poppins', sans-serif;
+  --typo-58-size: 16px;
+  --typo-58-weight: 600;
+  --typo-58-line-height: 24px;
+  --typo-58-letter-spacing: 0;
+  --typo-58-align: center;
+  --typo-58-color: var(--color-ffffff);
+
+  --typo-60-family: 'Poppins', sans-serif;
+  --typo-60-size: 30px;
+  --typo-60-weight: 600;
+  --typo-60-line-height: 45px;
+  --typo-60-letter-spacing: 0;
+  --typo-60-align: left;
+  --typo-60-color: var(--color-000000);
+
+  --typo-61-family: 'Poppins', sans-serif;
+  --typo-61-size: 20px;
+  --typo-61-weight: 400;
+  --typo-61-line-height: 30px;
+  --typo-61-letter-spacing: 0;
+  --typo-61-align: left;
+  --typo-61-color: var(--color-121212);
+
+  --typo-62-family: 'Poppins', sans-serif;
+  --typo-62-size: 11px;
+  --typo-62-weight: 400;
+  --typo-62-line-height: 16.5px;
+  --typo-62-letter-spacing: 0;
+  --typo-62-align: center;
+  --typo-62-color: var(--color-ff9c00);
+
+  --typo-63-family: 'Poppins', sans-serif;
+  --typo-63-size: 11px;
+  --typo-63-weight: 500;
+  --typo-63-line-height: 16.5px;
+  --typo-63-letter-spacing: 0;
+  --typo-63-align: left;
+  --typo-63-color: var(--color-000000);
+
+  --typo-64-family: 'Poppins', sans-serif;
+  --typo-64-size: 11px;
+  --typo-64-weight: 500;
+  --typo-64-line-height: 16.5px;
+  --typo-64-letter-spacing: 0;
+  --typo-64-align: left;
+  --typo-64-color: var(--color-d9d9d9);
+
+  --typo-65-family: 'Poppins', sans-serif;
+  --typo-65-size: 11px;
+  --typo-65-weight: 400;
+  --typo-65-line-height: 16.5px;
+  --typo-65-letter-spacing: 0;
+  --typo-65-align: left;
+  --typo-65-color: var(--color-d9d9d9);
+
+  --typo-66-family: 'Poppins', sans-serif;
+  --typo-66-size: 14px;
+  --typo-66-weight: 400;
+  --typo-66-line-height: 21px;
+  --typo-66-letter-spacing: 0;
+  --typo-66-align: left;
+  --typo-66-color: var(--color-121212);
+
+  --typo-67-family: 'SF Pro Display', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  --typo-67-size: 15px;
+  --typo-67-weight: 500;
+  --typo-67-line-height: 17.90039px;
+  --typo-67-letter-spacing: -0.165px;
+  --typo-67-align: left;
+  --typo-67-color: var(--color-303030);
+
+  /* Styles (subset used in this screen) */
+  --style-10-bg: var(--color-ffffff);
+  --style-10-radius: 30px;
+
+  --style-11-bg: var(--color-129575);
+  --style-11-radius: 10px;
+
+  --style-12-bg: var(--color-ffffff);
+  --style-12-opacity: 0;
+
+  --style-18-bg: var(--color-121212);
+
+  --style-19-bg: var(--color-ff9c00);
+
+  --style-28-border-color: var(--color-d9d9d9);
+  --style-28-border-width: 1px;
+  --style-28-bg: var(--color-d9d9d9);
+
+  --style-29-bg: var(--color-d9d9d9);
+
+  --style-30-border-color: var(--color-d9d9d9);
+  --style-30-border-width: 1.5px;
+  --style-30-radius: 10px;
+
+  --style-32-bg: var(--color-121212);
+  --style-32-radius: 100px;
+
+  --style-33-bg: var(--color-303030);
+  --style-33-opacity: 0.4;
+
+  --style-34-bg: var(--color-303030);
+  --style-34-border-color: var(--color-4cd964);
+  --style-34-border-width: 0px;
+  --style-34-radius: 1.6px;
+
+  --style-35-bg: var(--color-303030);
+
+  --style-126-bg: var(--color-ffffff);
+  --style-126-radius: 10px;
+
+  /* Shadows */
+  --shadow-0: 0px 0px 5px 3px #696969;
+  --shadow-1: 0px 8px 25px 0px #202020;
+  --shadow-2: 0px 0px 8px 0px #6c6c6c;
+  --shadow-3: 0px 0px 20px 0px #000000;
+  --shadow-4: 0px 6.31193px 19.72477px 0px #202020;
+  --shadow-5: 0px 4px 4px 0px #000000;
+  --shadow-10: 0px 0px 30px 0px #000000;
+
+  /* Spacing helpers */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+}
+
+/* Reset and shared rules */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+img { display: block; }
+
+.screen-container {
+  position: relative;
+  width: 375px;
+  height: 812px;
+  overflow: hidden;
+  background: var(--style-10-bg);
+  border-radius: var(--style-10-radius);
+}
+
+.absolute { position: absolute; }
+
+.text-typo-58 {
+  font-family: var(--typo-58-family);
+  font-size: var(--typo-58-size);
+  font-weight: var(--typo-58-weight);
+  line-height: var(--typo-58-line-height);
+  letter-spacing: var(--typo-58-letter-spacing);
+  text-align: var(--typo-58-align);
+  color: var(--typo-58-color);
+}
+
+.text-typo-60 {
+  font-family: var(--typo-60-family);
+  font-size: var(--typo-60-size);
+  font-weight: var(--typo-60-weight);
+  line-height: var(--typo-60-line-height);
+  letter-spacing: var(--typo-60-letter-spacing);
+  text-align: var(--typo-60-align);
+  color: var(--typo-60-color);
+}
+
+.text-typo-61 {
+  font-family: var(--typo-61-family);
+  font-size: var(--typo-61-size);
+  font-weight: var(--typo-61-weight);
+  line-height: var(--typo-61-line-height);
+  letter-spacing: var(--typo-61-letter-spacing);
+  text-align: var(--typo-61-align);
+  color: var(--typo-61-color);
+}
+
+.text-typo-62 {
+  font-family: var(--typo-62-family);
+  font-size: var(--typo-62-size);
+  font-weight: var(--typo-62-weight);
+  line-height: var(--typo-62-line-height);
+  letter-spacing: var(--typo-62-letter-spacing);
+  text-align: var(--typo-62-align);
+  color: var(--typo-62-color);
+}
+
+.text-typo-63 {
+  font-family: var(--typo-63-family);
+  font-size: var(--typo-63-size);
+  font-weight: var(--typo-63-weight);
+  line-height: var(--typo-63-line-height);
+  letter-spacing: var(--typo-63-letter-spacing);
+  text-align: var(--typo-63-align);
+  color: var(--typo-63-color);
+}
+
+.text-typo-64 {
+  font-family: var(--typo-64-family);
+  font-size: var(--typo-64-size);
+  font-weight: var(--typo-64-weight);
+  line-height: var(--typo-64-line-height);
+  letter-spacing: var(--typo-64-letter-spacing);
+  text-align: var(--typo-64-align);
+  color: var(--typo-64-color);
+}
+
+.text-typo-65 {
+  font-family: var(--typo-65-family);
+  font-size: var(--typo-65-size);
+  font-weight: var(--typo-65-weight);
+  line-height: var(--typo-65-line-height);
+  letter-spacing: var(--typo-65-letter-spacing);
+  text-align: var(--typo-65-align);
+  color: var(--typo-65-color);
+}
+
+.text-typo-66 {
+  font-family: var(--typo-66-family);
+  font-size: var(--typo-66-size);
+  font-weight: var(--typo-66-weight);
+  line-height: var(--typo-66-line-height);
+  letter-spacing: var(--typo-66-letter-spacing);
+  text-align: var(--typo-66-align);
+  color: var(--typo-66-color);
+}
+
+.text-typo-67 {
+  font-family: var(--typo-67-family);
+  font-size: var(--typo-67-size);
+  font-weight: var(--typo-67-weight);
+  line-height: var(--typo-67-line-height);
+  letter-spacing: var(--typo-67-letter-spacing);
+  text-align: var(--typo-67-align);
+  color: var(--typo-67-color);
+}

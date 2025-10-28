@@ -1,0 +1,295 @@
+@import url("./common.css");
+
+/* Root frame positioning basis:
+   root at x=426, y=-430, size 375x812.
+   Child positions are calculated as child_left = child.x - 426; child_top = child.y - (-430) = child.y + 430.
+   All elements are absolutely positioned within .screen-container.
+*/
+
+#root-screen {
+  position: relative;
+  width: 375px;
+  height: 812px;
+  background: var(--style-10-bg);
+  border-radius: var(--style-10-radius);
+  overflow: hidden;
+}
+
+/* Status Bar (13:71) at (0, 0) within root because x=426,y=-430 => left=0, top=0 */
+.status-bar {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 375px;
+  height: 44px;
+}
+.status-bar .symbols {
+  position: absolute;
+  left: 293.5px; /* 719.5 - 426 */
+  top: 16.6px;   /* -413.4 - (-430) => 16.6 */
+  width: 68px;
+  height: 13px;
+}
+.status-bar .battery {
+  position: absolute;
+  left: 336px; /* 762 - 426 */
+  top: 17.16px; /* -412.84 + 430 */
+  width: 24.5px;
+  height: 11.5px;
+}
+.status-bar .battery-rect {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 24.5px;
+  height: 11.5px;
+  background: var(--style-33-bg);
+  opacity: var(--style-33-opacity);
+}
+.status-bar .battery-fill {
+  position: absolute;
+  left: 338px; /* 764-426 */
+  top: 19.08px; /* -410.9233 + 430 */
+  width: 18px;
+  height: 7.666667px;
+  background: var(--style-34-bg);
+  border: var(--style-34-border-width) solid var(--style-34-border-color);
+  border-radius: var(--style-34-radius);
+}
+.status-bar .combined-shape {
+  position: absolute;
+  left: 293.5px; /* 719.5-426 */
+  top: 17.6px;   /* -412.4 + 430 */
+  width: 17.099991px;
+  height: 10.700005px;
+}
+.status-bar .wifi {
+  position: absolute;
+  left: 315.6px; /* 741.6-426 */
+  top: 17.4px;   /* -412.6 + 430 */
+  width: 15.4px;
+  height: 11.05721px;
+}
+.status-bar .time {
+  position: absolute;
+  left: 29.5px; /* 455.5-426 */
+  top: 14px;    /* -416 + 430 */
+}
+
+/* Title Group (13:110) at x=456,y=-336 */
+.title-group {
+  position: absolute;
+  left: 30px; /* 456-426 */
+  top: 94px;  /* -336 + 430 */
+  width: 155px;
+  height: 75px;
+}
+.title-group .hello {
+  position: absolute;
+  left: 0px; /* 456-456 */
+  top: 0px;  /* -336 - (-336) */
+  width: 84px;
+  height: 45px;
+}
+.title-group .welcome {
+  position: absolute;
+  left: 0px;      /* 456-456 */
+  top: 45px;      /* -291 - (-336) = 45 */
+  width: 155px;
+  height: 30px;
+}
+
+/* Input field 1 (Email) at x=456,y=-204 size 315x81 */
+.input-email {
+  position: absolute;
+  left: 30px; /* 456-426 */
+  top: 226px; /* -204 + 430 */
+  width: 315px;
+  height: 81px;
+}
+.input-email .bg {
+  position: absolute;
+  left: 0px; /* 456-456 */
+  top: 26px; /* -178 - (-204) */
+  width: 315px;
+  height: 55px;
+  background: var(--color-ffffff);
+  border: var(--style-30-border-width) solid var(--style-30-border-color);
+  border-radius: var(--style-30-radius);
+}
+.input-email .label {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.input-email .placeholder {
+  position: absolute;
+  left: 20px; /* 476-456 */
+  top: 45px;  /* -159 - (-204) */
+}
+
+/* Input field 2 (Password) at x=456,y=-93 */
+.input-password {
+  position: absolute;
+  left: 30px;
+  top: 337px; /* -93 + 430 */
+  width: 315px;
+  height: 81px;
+}
+.input-password .bg {
+  position: absolute;
+  left: 0px;
+  top: 26px; /* -67 - (-93) */
+  width: 315px;
+  height: 55px;
+  background: var(--color-ffffff);
+  border: var(--style-30-border-width) solid var(--style-30-border-color);
+  border-radius: var(--style-30-radius);
+}
+.input-password .label {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.input-password .placeholder {
+  position: absolute;
+  left: 20px; /* 476-456 */
+  top: 45px;  /* -48 - (-93) */
+}
+
+/* Forgot Password group at x=466,y=8 size 97x17 */
+.forgot-password {
+  position: absolute;
+  left: 40px; /* 466-426 */
+  top: 438px; /* 8 + 430 */
+  width: 97px;
+  height: 17px;
+}
+
+/* Divider line group at x=516,y=130 size 195x17 */
+.divider {
+  position: absolute;
+  left: 90px;  /* 516-426 */
+  top: 560px;  /* 130 + 430 */
+  width: 195px;
+  height: 17px;
+}
+.divider .line-left {
+  position: absolute;
+  left: 0px;   /* 516-516 */
+  top: 9px;    /* 139 - 130 */
+  width: 50px;
+  height: 0px;
+  border-top: var(--style-28-border-width) solid var(--style-28-border-color);
+}
+.divider .line-right {
+  position: absolute;
+  left: 145px; /* 661 - 516 */
+  top: 9px;    /* 139 - 130 */
+  width: 50px;
+  height: 0px;
+  border-top: var(--style-28-border-width) solid var(--style-28-border-color);
+}
+.divider .label {
+  position: absolute;
+  left: 57px; /* 573 - 516 */
+  top: 0px;   /* 130 - 130 */
+}
+
+/* Social buttons area: first button at x=557,y=167 (44x44), second at x=626,y=167 */
+.social-btn.google {
+  position: absolute;
+  left: 131px; /* 557-426 */
+  top: 597px;  /* 167 + 430 */
+  width: 44px;
+  height: 44px;
+}
+.social-btn.google .card {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 44px;
+  height: 44px;
+  background: var(--style-126-bg);
+  border-radius: var(--style-126-radius);
+  box-shadow: var(--shadow-0);
+}
+.social-btn.google .google-icon {
+  position: absolute;
+  left: 10px; /* 567-557 */
+  top: 10px;  /* 177-167 */
+  width: 24px;
+  height: 24px;
+}
+
+.social-btn.facebook {
+  position: absolute;
+  left: 200px; /* 626-426 */
+  top: 597px;  /* 167 + 430 */
+  width: 44px;
+  height: 44px;
+}
+.social-btn.facebook .card {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 44px;
+  height: 44px;
+  background: var(--style-126-bg);
+  border-radius: var(--style-126-radius);
+  box-shadow: var(--shadow-0);
+}
+.social-btn.facebook .fb-icon {
+  position: absolute;
+  left: 10px; /* 636-626 */
+  top: 10px;  /* 177-167 */
+  width: 24px;
+  height: 24px;
+}
+
+/* CTA Big Button at x=456,y=50 size 315x60 */
+.cta-button {
+  position: absolute;
+  left: 30px; /* 456-426 */
+  top: 480px; /* 50 + 430 */
+  width: 315px;
+  height: 60px;
+  background: var(--style-11-bg);
+  border-radius: var(--style-11-radius);
+  display: flex; flex-direction: row; align-items: center; justify-content: center;
+  gap: 10px;
+}
+.cta-button .label {
+  color: var(--color-ffffff);
+}
+.cta-button .arrow-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* Sign up link text at x=525,y=266 */
+.signup-link {
+  position: absolute;
+  left: 99px; /* 525-426 */
+  top: 696px; /* 266 + 430 */
+  width: 177px;
+  height: 17px;
+}
+
+/* Home Indicator component at x=426,y=348 size 375x34 */
+.home-indicator {
+  position: absolute;
+  left: 0px; /* 426-426 */
+  top: 778px; /* 348 + 430 */
+  width: 375px;
+  height: 34px;
+}
+.home-indicator .bar {
+  position: absolute;
+  left: 120px; /* 546-426 */
+  top: 21px;   /* 369-348 */
+  width: 135px;
+  height: 5px;
+  background: var(--style-32-bg);
+  border-radius: var(--style-32-radius);
+}
